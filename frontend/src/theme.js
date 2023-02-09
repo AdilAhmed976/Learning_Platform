@@ -35,7 +35,7 @@ export const theme = extendTheme({
   components: {
     Button: {
       // 1. We can update the base styles
-      baseStyle: {
+        baseStyle: {
         fontWeight: '400',
         size:"12px",
         backgroundColor:"#000842",
@@ -47,10 +47,15 @@ export const theme = extendTheme({
         }
       },
       variants : {
+        
+          "with-shadow": {
+            bg: 'red.400',
+            boxShadow: '0 0 2px 2px #efdfde',
+          },
         my:{
           fontWeight: '400',
           size:"12px",
-          backgroundColor:"#0C21C1",
+          backgroundColor:"red",
           color:"white",
           _hover:{
             fontWeight: '400',

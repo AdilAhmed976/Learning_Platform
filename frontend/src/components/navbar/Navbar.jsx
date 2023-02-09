@@ -39,6 +39,7 @@ import { useTheme } from '@chakra-ui/react'
     return (<>
         {location.pathname === "/login" ? <Box></Box>:
       <Box
+        borderBottom="1px solid lightgray"
         // position={"sticky"}
         fontSize={{ base: "10px", sm: "10px", md: "10px", lg: "11px", xl: "12px",'2xl': '13px'}}
         top={'0px'} zIndex={"999"} >
@@ -128,7 +129,6 @@ console.log(theme.styles.colors.primary)
           style={{
             borderBottom :location.pathname === `/${navItem.label}` ? `2px solid ${theme.styles.colors.secondary}` : "none" ,
             color :location.pathname === `/${navItem.label}` ? theme.styles.colors.secondary : theme.styles.colors.primary ,
-            boxShadow :location.pathname === `/${navItem.label}` ? "rgba(17, 17, 26, 0.1) 0px 10px 0px;" : "none"
           }} 
           _hover={{borderBottom:"2px solid red" , cursor:"pointer" , color:"red"}}
           onClick={() =>navigate(`${navItem.href}`)}

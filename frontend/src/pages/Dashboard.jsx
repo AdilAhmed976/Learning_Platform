@@ -1,10 +1,10 @@
-import { Box } from '@chakra-ui/react'
+import { Box,useTheme, } from '@chakra-ui/react'
 import React from 'react'
 import {TodaysTasks} from "../components/dashboard/TodaysTasks"
 import { NavTopBanner } from '../components/navbar/NavTopBanner'
 
 export const Dashboard = () => {
-
+  const theme = useTheme()
   const myText = "Today's tasks"
   const buttonList = [
     { 
