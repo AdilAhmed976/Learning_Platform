@@ -10,12 +10,9 @@ import {
   Stack,
   Image,
   InputGroup,
-  InputLeftAddon,
   InputRightElement,
   InputLeftElement,
   Text,
-  VStack,
-  Box,
   HStack
 } from '@chakra-ui/react';
 import { Email } from '../icons/svg/Email';
@@ -85,7 +82,6 @@ export const Login = () => {
               <Link color="low" >Forgot password?</Link>
             </Stack>
             <Button style={{
-              backgroundColor:"0C21C1",
               height:"53px",
               fontWeight:"400",
               backgroundColor:"#0C21C1",
